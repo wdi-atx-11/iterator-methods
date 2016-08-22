@@ -57,7 +57,7 @@ main(3, 2);
 ```
 Here's what the call stack would look like for the `main(3,2)` call above:
 
-<img src="images/simple_call_stack.svg">
+<img src="images/simple_call_stack.png">
 
 
 ```js
@@ -72,7 +72,7 @@ function factorial(n){
 
 Here's what the call stack would look like if we call `factorial(3)` given the code above. (The function name is shortened to `fact` for space.)
 
-<img src="images/fact_call_stack.svg">
+<img src="images/fact_call_stack.png">
 
 
 A function that calls itself is called a **recursive** function.
