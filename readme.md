@@ -54,6 +54,8 @@ Here's what the call stack would look like for the `main(3,2)` call above:
 <img src="images/simple_call_stack.png">
 
 
+#### Recursive Example
+
 ```js
 function factorial(n){
     if (n <= 1) {
@@ -77,6 +79,7 @@ A function that calls itself is called a **recursive** function.
 
 A **callback** is a function that is passed into another function as an argument and then used. A function that can take in a callback as an argument is known as a higher order function.
 
+
 ```js
 
 1   function higherOrderFunction(phrase, callback) {
@@ -97,6 +100,13 @@ A **callback** is a function that is passed into another function as an argument
 12  higherOrderFunction("Functions are fun!", splitItCallback);
 
 ```
+
+
+Callbacks allow us to queue up the execution of a function until after some other code completes. They allow for asynchronous behavior, even though JavaScript is a single-threaded language. They also let us customize behaviors inside libraries. 
+
+In order to accomplish this, callbacks don't just use the regular call stack. They also involve a structure called a callback queue (or line).  When the callback is ready to be run, it's added to the queue. Callbacks waiting in the queue are run whenever the stack is empty.
+
+See this awesome video of [a talk by Philip Roberts](https://www.youtube.com/watch?v=8aGhZQkoFbQ) on how JavaScript works.
 
 #### Check for Understanding
 
@@ -421,6 +431,11 @@ function myForEach(collection, callback) {
 myForEach([0, 100, 200, 300], print)
 ```
 </details>
+
+### Closing Thoughts
+
+- Callbacks are a very common pattern in JavaScript.  
+- Iterator methods help us write more conventional, declarative code. Loops (`for` and `while`) are more imperative and offer greater flexibility (configuration).
 
 ## Independent Practice: Build your own iterators
 
