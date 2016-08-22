@@ -32,46 +32,46 @@ Using callback functions is an effective way to write declarative, functional Ja
 
 
 
-### The Call Stack
+<!--### The Call Stack-->
 
-We say that a function **takes in arguments** and **returns** something to us. You can imagine JavaScript control flow as a person talking on the phone with your program. When you call a function, it's like JS puts the main program on hold and contacts the function. If another function is called, JS puts the first function on hold to contact the new one. When the call to that function finishes, JS returns to the previous call.
+<!--We say that a function **takes in arguments** and **returns** something to us. You can imagine JavaScript control flow as a person talking on the phone with your program. When you call a function, it's like JS puts the main program on hold and contacts the function. If another function is called, JS puts the first function on hold to contact the new one. When the call to that function finishes, JS returns to the previous call.-->
 
-To keep track of the functions JavaScript has on hold, it uses a **call stack**. As JavaScript calls a new function, it pushes the function and its important variables onto the call stack. When a function returns, it pops that function off of the top of the call stack. The return value is "substituted in" for the function call after the function returns.
+<!--To keep track of the functions JavaScript has on hold, it uses a **call stack**. As JavaScript calls a new function, it pushes the function and its important variables onto the call stack. When a function returns, it pops that function off of the top of the call stack. The return value is "substituted in" for the function call after the function returns.-->
 
-```js
-function add(a, b){
-  return a + b;
-}
-function main(x, y){
-  var z = add(x, y);
-  console.log(z);
-  return z;
-}
-main(3, 2);
-```
-Here's what the call stack would look like for the `main(3,2)` call above:
+<!--```js-->
+<!--function add(a, b){-->
+<!--  return a + b;-->
+<!--}-->
+<!--function main(x, y){-->
+<!--  var z = add(x, y);-->
+<!--  console.log(z);-->
+<!--  return z;-->
+<!--}-->
+<!--main(3, 2);-->
+<!--```-->
+<!--Here's what the call stack would look like for the `main(3,2)` call above:-->
 
-<img src="images/simple_call_stack.png">
-
-
-#### Recursive Example
-
-```js
-function factorial(n){
-    if (n <= 1) {
-        return 1;
-    } else {
-        return n * factorial(n-1);
-    }
-}
-```
-
-Here's what the call stack would look like if we call `factorial(3)` given the code above. (The function name is shortened to `fact` for space.)
-
-<img src="images/fact_call_stack.png">
+<!--<img src="images/simple_call_stack.png">-->
 
 
-A function that calls itself is called a **recursive** function.
+<!--#### Recursive Example-->
+
+<!--```js-->
+<!--function factorial(n){-->
+<!--    if (n <= 1) {-->
+<!--        return 1;-->
+<!--    } else {-->
+<!--        return n * factorial(n-1);-->
+<!--    }-->
+<!--}-->
+<!--```-->
+
+<!--Here's what the call stack would look like if we call `factorial(3)` given the code above. (The function name is shortened to `fact` for space.)-->
+
+<!--<img src="images/fact_call_stack.png">-->
+
+
+<!--A function that calls itself is called a **recursive** function.-->
 
 
 
@@ -104,7 +104,7 @@ A **callback** is a function that is passed into another function as an argument
 
 Callbacks allow us to queue up the execution of a function until after some other code completes. They allow for asynchronous behavior, even though JavaScript is a single-threaded language. They also let us customize behaviors inside libraries. 
 
-In order to accomplish this, callbacks don't just use the regular call stack. They also involve a structure called a callback queue (or line).  When the callback is ready to be run, it's added to the queue. Callbacks waiting in the queue are run whenever the stack is empty.
+<!--In order to accomplish this, callbacks don't just use the regular call stack. They also involve a structure called a callback queue (or line).  When the callback is ready to be run, it's added to the queue. Callbacks waiting in the queue are run whenever the stack is empty.-->
 
 See this awesome video of [a talk by Philip Roberts](https://www.youtube.com/watch?v=8aGhZQkoFbQ) on how JavaScript works.
 
