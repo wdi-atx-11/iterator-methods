@@ -199,7 +199,7 @@ var items = [
 <details>
   <summary>Answer: calling `sort` with customized function</summary>
   ```js
-  item.sort(compareByPrice);
+  items.sort(compareByPrice);
   ```
 </details>
 
