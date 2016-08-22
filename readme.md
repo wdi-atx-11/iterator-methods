@@ -82,18 +82,18 @@ A **callback** is a function that is passed into another function as an argument
 
 ```js
 
-   function higherOrderFunction(phrase, callback) {
-     console.log("Higher order function calling callback...");
-     callback(phrase);
-   }
-   function shoutItCallback(message){
-     console.log(message.toUpperCase());
-   }
-   function splitItCallback(str){
-     console.log(str.split(""));
-  }
-  higherOrderFunction("Functions are fun!", shoutItCallback);
-  higherOrderFunction("Functions are fun!", splitItCallback);
+function higherOrderFunction(phrase, callback) {
+  console.log("Higher order function calling callback...");
+  callback(phrase);
+}
+function shoutItCallback(message){
+  console.log(message.toUpperCase());
+}
+function splitItCallback(str){
+  console.log(str.split(""));
+}
+higherOrderFunction("Functions are fun!", shoutItCallback);
+higherOrderFunction("Functions are fun!", splitItCallback);
 
 ```
 
