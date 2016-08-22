@@ -17,15 +17,9 @@ Using callback functions is an effective way to write declarative, functional Ja
 *After this workshop, developers will be able to:*
 
 - Pass a function as a callback to another function
-- Use callbacks to build more declarative iterators
-- Pick the best iterator for the job
-- Build certain iterators from scratch
-
-Trace the flow of a program that uses callbacks  / predict which line will be executed next (draw a simplified call stack)
-Create custom callbacks for JavaScript and jQuery methods
-Use iterator methods to “loop” through collections
-Write a higher order function that takes in and uses a callback
-
+- Use iterator methods with callbacks to build more declarative loop structures
+- Recognize the best iterator method for a particular use case
+- Build iterator methods from scratch
 
 
 ### Where should we be now?
@@ -369,7 +363,7 @@ In the above example, the first time the callback is called it receives `100` an
 
 > **Note**: We set the starting value to `100` by passing in an optional extra argument to `reduce`.
 
-#### Check for Understanding: Dog Walking
+#### Check for Understanding: Test Scores
 
 <details>
 <summary>
@@ -389,18 +383,18 @@ var average = total/(scores.length);
 ```
 </details>
 
-#### Check for Understanding
+#### Discussion: `forEach`
 
 So how does `forEach` work?
 
 Let's think about `forEach` again. What's happening behind the scenes?
 
-* What are our inputs?
-* What is our output?
-* What happens on each loop?
-* What does the callback function do?
-* What gets passed into our callback function? i.e. what arguments?
-  * Where does it come from?
+* What are our inputs?  
+* What is our output?  
+* What happens on each loop?  
+* What does the callback function do?  
+* What gets passed into our callback function? That is, what are its inputs/parameters?  
+* Where does the callback come from?
 
 Let's check:
 
