@@ -490,7 +490,3 @@ myForEach([0, 100, 200, 300], print)
 
 - Callbacks are a very common pattern in JavaScript.  
 - Iterator methods help us write more conventional, declarative code. Loops (`for` and `while`) are more imperative and offer greater flexibility (configuration).
-
-## Independent Practice: Build your own iterators
-
-We are going to [**implement our own iterators**](https://github.com/sf-wdi-29/js-building-iterators-lab), from scratch.
