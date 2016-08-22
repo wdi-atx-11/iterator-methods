@@ -161,7 +161,7 @@ arr.sort();
 //=> [1, 125, 2, 500]
 ```
 
-Checking the [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), you should notice there is an optional `compareFunction` argument that can change the sort order rules. 
+Checking the [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), you should notice there is an optional `compareFunction` parameter that can change the sort order rules. 
 
 Work in a snippet or in your console. Use JavaScript's `sort` function to sort the following objects by price, from lowest to highest:
 
