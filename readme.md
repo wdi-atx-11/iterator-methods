@@ -151,6 +151,60 @@ element.addEventListener("click", function(event){
 In these cases, the callback often won't be given a name.  A function without a name is called an **anonymous function**.
 
 
+#### Independent Practice: `sort`
+
+JavaScript's built-in `sort` method for arrays sorts items as strings, alphabetically.
+
+```js
+var arr = [1, 2, 125, 500];
+arr.sort();
+//=> [1, 125, 2, 500]
+```
+
+Checking the [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), you should notice there is an optional `compareFunction` argument that can change the sort order rules. 
+
+Work in a snippet or in your console. Use JavaScript's `sort` function to sort the following objects by price, from lowest to highest:
+
+```js
+var items = [
+  { name: "trail mix", price: 3.50 },
+  { name: "first aid kit", price: 20.00 },
+  { name: "water bottle", price: 12.00 },
+  { name: "flashlight", price: 8.00 },
+  { name: "gps unit", price: 93.00 }
+];
+```
+
+<details>
+  <summary>Hint: how to start</summary>
+  You'll need to write a custom `compareFunction` and pass it into the `sort` method. Follow the structure of the custom `compareFunction` from the documentation.
+</details>
+
+<details>
+  <summary>Answer: the compare function</summary>
+  ```js
+  function compareByPrice(item1, item2){
+    if (item1.price < item2.price) {
+      return -1;
+    }
+    if (item1.price > item2.price) {
+      return 1;
+    }
+    // items must have equal price
+    return 0;
+  }
+  ```
+</details>
+
+<details>
+  <summary>Answer: calling `sort` with customized function</summary>
+  ```js
+  item.sort(compareByPrice);
+  ```
+</details>
+
+
+
 ### Iterator Methods
 
 **Iteration** basically means looping.
