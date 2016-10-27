@@ -207,6 +207,8 @@ var items = [
 
 **Iteration** basically means looping.
 
+![looping](http://i.giphy.com/GB3XCL0cnIUxi.gif)
+
 ```javascript
 var potatoes = ["Yukon Gold", "Russet", "Yellow Finn", "Kestrel"];
 for(var i=0; i < potatoes.length; i++){
