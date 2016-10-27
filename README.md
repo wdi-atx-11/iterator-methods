@@ -149,6 +149,10 @@ element.addEventListener("click", function(event){
 In these cases, the callback often won't be given a name.  A function without a name is called an **anonymous function**.
 
 
+#### Check for Understanding
+
+5 minutes: In pairs, come up with your own function which utilizes a callback. *Bonus:* rewrite using an anonymous function.
+
 #### Independent Practice: `sort`
 
 JavaScript's built-in `sort` method for arrays sorts items as strings, alphabetically.
