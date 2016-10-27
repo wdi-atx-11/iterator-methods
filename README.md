@@ -121,8 +121,6 @@ function countClicks(event){
 }
 ```
 
-*Discuss the above example with your neighbor:*
-
 1. What do you think the code will do?
 
 1. Copy the code from above. Run it in the console in your browser.
