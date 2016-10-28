@@ -81,26 +81,34 @@ Using callback functions is an effective way to write declarative, functional Ja
 
 A **callback** is a function that is passed into another function as an argument and then used. A function that can take in a callback as an argument is known as a higher order function.
 
-Remember this example?
+Let's review with an example.
 
 
 ```js
 
-function higherOrderFunction(phrase, callback) {
-  console.log("Higher order function calling callback...");
-  callback(phrase);
+function masterMathFunction(a, b, callback) {
+    console.log("the inputs are: " + a + " and " + b);
+    callback(a,b);
 }
-function shoutItCallback(message){
-  console.log(message.toUpperCase());
+
+function multiplyMe(n,m) {
+    console.log("Product: " + n*m);
 }
-function splitItCallback(str){
-  console.log(str.split(""));
+
+function raiseMe(n,m) {
+    console.log("Power: "+ Math.pow(n,m));
 }
-higherOrderFunction("Functions are fun!", shoutItCallback);
-higherOrderFunction("Functions are fun!", splitItCallback);
+
+masterMathFunction(2,3,raiseMe);
+masterMathFunction(2,3,multiplyMe);
 
 ```
 
+1. What is the higher order function here?
+
+2. What function(s) may be used as callbacks for the higher order function?
+
+3. What is another possible callback function?
 
 Callbacks allow us to queue up the execution of a function until after some other code completes. They allow for asynchronous behavior, even though JavaScript is a single-threaded language. They also let us customize behaviors inside libraries. 
 
