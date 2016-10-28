@@ -75,11 +75,13 @@ Using callback functions is an effective way to write declarative, functional Ja
 
 
 
-### Callbacks
+### Callbacks: Review
 
 ![callback](http://i.giphy.com/l0MYM5ZAXGvK1KSPK.gif)
 
 A **callback** is a function that is passed into another function as an argument and then used. A function that can take in a callback as an argument is known as a higher order function.
+
+Remember this example?
 
 
 ```js
@@ -121,16 +123,10 @@ function countClicks(event){
 }
 ```
 
-1. What do you think the code will do?
-
-1. Copy the code from above. Run it in the console in your browser.
-
-1. In that example, which function is the higher order function?
-
-1. Which function is the callback?
+Let's run this in the console.
 
 
-####Anonymous Functions
+####Anonymous Functions: Review
 
 Often, if a callback will only be used with one higher order function, the callback function definition is written inside the higher order function call.
 
@@ -146,10 +142,6 @@ element.addEventListener("click", function(event){
 
 In these cases, the callback often won't be given a name.  A function without a name is called an **anonymous function**.
 
-
-#### Check for Understanding
-
-5 minutes: In pairs, come up with your own function which utilizes a callback. *Bonus:* rewrite using an anonymous function.
 
 #### Independent Practice: `sort`
 
