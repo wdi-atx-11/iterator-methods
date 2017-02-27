@@ -153,7 +153,7 @@ In these cases, the callback often won't be given a name.  A function without a 
 
 #### Independent Practice: `sort`
 
-JavaScript's built-in `sort` method for arrays sorts items as strings, alphabetically.
+JavaScript's built-in `sort` method for arrays sorts numbers from lowest to highest value and String items as strings, alphabetically.
 
 ```js
 var arr = [1, 2, 125, 500];
