@@ -77,7 +77,7 @@ Using callback functions is an effective way to write declarative, functional Ja
 
 ### Callbacks: Review
 
-![callback](http://i.giphy.com/l0MYM5ZAXGvK1KSPK.gif)
+![callbacks review](https://cloud.githubusercontent.com/assets/4304660/25287502/391f0af2-2687-11e7-8a63-b4498896ec37.gif)
 
 A **callback** is a function that is passed into another function as an argument and then used. A function that can take in a callback as an argument is known as a higher order function.
 
@@ -209,7 +209,7 @@ var items = [
 
 **Iteration** basically means looping.
 
-![looping](http://i.giphy.com/GB3XCL0cnIUxi.gif)
+![callbacks review](https://cloud.githubusercontent.com/assets/4304660/25287502/391f0af2-2687-11e7-8a63-b4498896ec37.gif)
 
 ```javascript
 var potatoes = ["Yukon Gold", "Russet", "Yellow Finn", "Kestrel"];
