@@ -209,7 +209,7 @@ var items = [
 
 **Iteration** basically means looping.
 
-![callbacks review](https://cloud.githubusercontent.com/assets/4304660/25287502/391f0af2-2687-11e7-8a63-b4498896ec37.gif)
+![goon](https://cloud.githubusercontent.com/assets/4304660/25287587/8d1d8e30-2687-11e7-8db5-8ea9431a7f64.gif)
 
 ```javascript
 var potatoes = ["Yukon Gold", "Russet", "Yellow Finn", "Kestrel"];
